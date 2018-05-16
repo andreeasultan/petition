@@ -1,0 +1,25 @@
+<div class = "container">
+    {{> header}}
+
+    <div class = "main">
+        <img src="/timeforlunch.jpg">
+        <h2>Sign this petition to ban meetings during lunchtime!</h2>
+        <p>Eating lunch helps you and your colleagues to be healthier and happier at work.</p>
+        <form class="form" method="post">
+            {{#error}}
+            <p style="color:red">Oups, something went wrong. Try again!</p>
+            {{/error}}
+            <!-- <input type="text" name = "first" placeholder="first_name">
+            <input type="text" name = "last" placeholder="last_name"> -->
+            <div class="signature">
+                <p>Sign here</p>
+                <input type="hidden" name="_csrf" value="{{csrfToken}}">
+                <input id="signature" type="hidden" name = "signature"placeholder="signature">
+                <canvas id="canvas" width="400" height="100" ></canvas>
+            </div>
+            <div class="submit">
+                <button>SUBMIT</button>
+            </div>
+        </form>
+
+    </div>

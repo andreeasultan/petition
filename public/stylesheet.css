@@ -1,0 +1,145 @@
+body {
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0px;
+    width: 100%;
+}
+
+.container {
+    color: rgba(23, 23, 23, 0.8);
+    font-family: "Assistant", sans-serif;
+    width: inherit;
+    text-align: center;
+}
+.container p {
+    font-size: 17px;
+}
+.header {
+    text-align: center;
+    margin: 0px;
+    width: inherit;
+    position: relative;
+    background-color: #cc0000;
+}
+
+img {
+    width: 170px;
+    height: 170px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.header h1 {
+    font-size: 35px;
+    padding-bottom: 0px;
+    padding-top: 10px;
+    display: inline-block;
+    color: beige;
+    font-weight: bold;
+    width: 70%;
+    margin: 0px;
+}
+.header h2 {
+    color: beige;
+    font-weight: bold;
+    width: 70%;
+    margin: 0px;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.header p {
+    margin: 10px 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*.quote {
+    padding-top: 5px;
+}*/
+.main {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.signature p {
+    font-size: 15px;
+    font-style: italic;
+}
+
+canvas {
+    border: 3px grey dashed;
+}
+button {
+    margin-top: 20px;
+    width: 80px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #cc0000;
+    color: beige;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0px;
+}
+li {
+    font-size: 20px;
+    display: block;
+}
+
+h3 {
+    text-decoration: underline;
+    color: #cc0000;
+}
+
+input {
+    display: block;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    font-size: 15px;
+}
+.register_form p {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.logout {
+    float: right;
+    z-index: 1000000000000;
+    /*padding-top: 20px;*/
+    padding-right: 10px;
+    color: beige;
+}
+
+.signatureImg {
+    margin-top: 20px;
+    width: 400;
+    height: 100;
+    border: 3px grey dashed;
+}
+
+.thankyou {
+    margin: 0px;
+}
+
+.changes a {
+    margin: 10px;
+}
+
+.changes button {
+    width: 100px;
+    margin-top: 15px;
+}
+.register_form .user_input {
+    margin-bottom: 1px;
+    margin-top: 1px;
+}

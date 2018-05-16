@@ -1,0 +1,27 @@
+<div class = "container">
+    <div class="title">
+        {{> header}}
+        <h2 class="quote" >"Destiny may ride with us today, but there is no reason for it to interfere with lunch." (Peter the Great)</h2 >
+    </div>
+
+    <div class = "main">
+        <img src="/timeforlunch.jpg">
+        <p>Become a supporter!</p>
+        <form class="register_form" method="post">
+            {{#error}}
+            <p style="color:red">Oups, something went wrong. Try again!</p>
+            {{/error}}
+            <input type="hidden" name="_csrf" value="{{csrfToken}}">
+            <input type="text" name = "first" placeholder="first name">
+            <input type="text" name = "last" placeholder="last name">
+            <input type="email" name = "email" placeholder="email address">
+            <input type="password" name = "password" placeholder="password">
+
+            <div class="register_submit">
+                <button>SIGN UP</button>
+
+            </div>
+        <p>If you are already a member, please <a href="/login">log in</a></p>
+        </form>
+    </div>
+    </div>

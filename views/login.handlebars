@@ -1,0 +1,18 @@
+<div class = "container">
+    {{> header}}
+
+<div class = "main">
+    <img src ="/timeforlunch.jpg">
+    <h1>Please log in.</h1>
+    <form class="login_form" method="post">
+        {{#error}}
+        <p style="color:red">Oups, something went wrong. Try again!</p>
+        {{/error}}
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+        <input type="text" name = "email" placeholder="email address">
+        <input type="password" name = "password" placeholder="password">
+
+        <div class="register_submit">
+            <button>LOG IN</button>
+        </div>
+</div>

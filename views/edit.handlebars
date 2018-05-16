@@ -1,0 +1,32 @@
+<div class = "container">
+    {{> header}}
+    <div class="main">
+        <img src ="/timeforlunch.jpg">
+        <h2>Edit your profile:</h2>
+        <div class = "udpate_profile">
+            <form class="register_form" method="post">
+                <input type="hidden" name="_csrf" value="{{csrfToken}}">
+                <p class="user_input">First name:</p>
+                <input type="text" name = "first" value="{{firstName}}">
+                <p class="user_input">Last name:</p>
+                <input type="text" name = "last" value="{{lastName}}">
+                <p class="user_input">Email address:</p>
+                <input type="text" name = "email" value="{{email}}">
+                <p class="user_input">Password:</p>
+                <input type="password" name = "password" value="">
+                <p class="user_input">Age:</p>
+                <input type="text" name = "age" value="{{age}}">
+                <p class="user_input">City:</p>
+                <input type="text" name = "city" value="{{city}}">
+                <p class="user_input">Homepage:</p>
+                <input type="text" name = "homepage" value="{{homepage}}">
+
+
+                <div class="profile_update">
+                    <button>UPDATE</button>
+                </div>
+            </form>
+    </div>
+
+
+    </div>

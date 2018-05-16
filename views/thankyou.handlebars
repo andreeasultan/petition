@@ -1,0 +1,23 @@
+<div class="container">
+
+    {{> header}}
+
+    <div class="main">
+        <img src="/timeforlunch.jpg">
+        <h2 class="thankyou">Thank you for signing the petition to ban meetings during lunchtime!</h2>
+        <p>You're part of a growing community who cares about a healthy eating routine at work.</p>
+
+        <img class="signatureImg" src="{{sigUrl}}">
+        <a href="/signers">
+            <h2>See all {{data}} signers</h2>
+        </a>
+        <div class="changes">
+            <a class="edit" href="/profile/edit">Edit your profile</a>
+            <form class="" action="/delete" method="post">
+                <input type="hidden" name="_csrf" value="{{csrfToken}}">
+                <button>Delete your signature</button>
+            </form>
+    </div>
+
+
+</div>

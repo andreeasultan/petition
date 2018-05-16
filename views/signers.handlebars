@@ -1,0 +1,29 @@
+<div class= "container">
+    {{> header}}
+    <div class=main>
+        <img src="/timeforlunch.jpg">
+        <h2>Our community is growing!</h2>
+
+
+        <h3>Recent joiners{{#if selectedCity}} in {{selectedCity}}{{/if}}:</h3>
+
+
+        <ul>
+
+        {{#each data}}
+            <li>{{first_name}} {{last_name}}
+                {{#if age}} ({{age}} years old{{#if city}}, from <a href="/signers/{{city}}">{{city}}{{/if}})</a> {{/if}}</li>
+        {{/each}}
+
+
+        {{#each myData}}
+            <li>{{first_name}} {{last_name}} ({{age}} years old)</li>
+        {{/each}}
+
+
+
+
+        </ul>
+    </div>
+
+</div>
